@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Nav from "./Components/Nav/Nav";
-
+import { Providers } from "./Providers";
 
 export const metadata: Metadata = {
   title: "Salon Belleza",
@@ -14,9 +14,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>
-        <Nav  />
-        {children}
+      <body className="overflow-x-hidden">
+        <Nav />
+        <Providers>
+          <div className="relative top-20">{children}</div>
+        </Providers>
       </body>
     </html>
   );

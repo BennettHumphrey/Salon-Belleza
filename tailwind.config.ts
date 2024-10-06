@@ -21,7 +21,8 @@ const config: Config = {
         'bg-light': '#efe2c9', //Tan
         'bg-dark': '#2c3827', //Green
         'nav': '#313729',  //Slightly darker green
-        'nav-open': '#4e5e41',  //Slightly lgihter green
+        'nav-open': '#4e5e41',  //Slightly lighter green
+        'nav-line': '#597733',  //Much ligher green
         'text-light': '#ffffff',  //White
         'text-accent': '#c59d5f', //Tan
         'text-dark': '#000000',   //Black
