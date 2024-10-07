@@ -1,5 +1,5 @@
 import React from "react";
-import OurTeam from "./Components/OurTeam";
+import OurTeam from "./Components/OurTeam/OurTeam";
 import OurStoryAbout from "./Components/OurStoryAbout";
 import SubPageHeader from "../Components/SubPageHeader";
 
