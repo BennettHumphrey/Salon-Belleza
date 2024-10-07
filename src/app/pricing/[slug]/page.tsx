@@ -2,38 +2,27 @@
 
 import React, { FC } from "react";
 import { pricingData } from "../data";
-import { useParallax } from "react-scroll-parallax";
 import Link from "next/link";
+import SubPageHeader from "@/app/Components/SubPageHeader";
 
-type PricingSlug = keyof typeof pricingData;
+type PricingSlug = keyof typeof pricingData.sections;
 
 type Props = {
   params: { slug: PricingSlug }; // Ensure slug is a valid key in pricingData
 };
 
 const page: FC<Props> = ({ params }) => {
-  const data = pricingData[params.slug];
-  const paths = Object.keys(pricingData);
+  const data = pricingData.sections[params.slug];
+  const paths = Object.keys(pricingData.sections);
 
-  const parallax = useParallax({
-    speed: -25,
-  });
+  // const parallax = useParallax({
+  //   speed: -25,
+  // });
 
-  //   [#444f36cc]
 
   return (
     <div className="relative">
-      <div className="w-full h-[25vh] md:h-[25vw] flex items-center justify-center relative">
-        <img
-          ref={parallax.ref as React.RefObject<HTMLImageElement>}
-          src="/imgs/haircut-2.jpg"
-          className="h-[180%] -top-[150%] lg:-top-[100%] w-full absolute -z-20"
-        />
-        <div className="h-[full] w-full absolute bg-[#444f36cc] inset-0 -z-10" />
-        <h1 className="text-2xl font-bold tracking-widest">
-          OUR HAIR SERVICES
-        </h1>
-      </div>
+      <SubPageHeader src={pricingData.headerImg} header={pricingData.generalHeaderText} />
       <div className="bg-bg-light text-text-dark">
         <div className="flex flex-wrap gap-5 justify-around items-center md:justify-center py-6 px-4 lg:max-w-[70vw] m-auto">
           {paths.map((path, index) => (
