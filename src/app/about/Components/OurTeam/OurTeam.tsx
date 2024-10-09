@@ -7,7 +7,7 @@ const OurTeam = () => {
       <h2 className="text-center text-4xl font-bold tracking-wider pb-5 pt-10">
         {ourTeamData.header}
       </h2>
-      <div className="flex flex-col gap-12 justify-center items-center md:flex-row md:flex-wrap">
+      <div className="flex flex-col gap-12 justify-center items-center md:flex-row md:flex-wrap md:items-start">
         {ourTeamData.team.map((member, index) => (
           <div
             key={index}

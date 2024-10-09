@@ -1,7 +1,8 @@
 import React from "react";
 import OurTeam from "./Components/OurTeam/OurTeam";
-import OurStoryAbout from "./Components/OurStoryAbout";
 import SubPageHeader from "../Components/SubPageHeader";
+import Footer from "../Components/Footer/Footer";
+import OurStoryAbout from "./Components/OurStoryAbout/OurStoryAbout";
 
 const About = () => {
   return (
@@ -9,6 +10,7 @@ const About = () => {
       <SubPageHeader src="/imgs/haircut-1.jpg" header="ABOUT US" />
       <OurTeam />
       <OurStoryAbout />
+      <Footer  />
     </div>
   );
 };

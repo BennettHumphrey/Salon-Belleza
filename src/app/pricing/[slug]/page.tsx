@@ -42,7 +42,7 @@ const page: FC<Props> = ({ params }) => {
           <p className="text-lg font-thin pt-4 pb-14">
             {data.headerDescription}
           </p>
-          <div className="flex flex-col gap-6">
+          <div className="flex flex-col gap-6 pb-12">
             {data.prices.map((item, index) => (
               <div key={index} className="flex flex-col justify-between">
               <div className="flex items-center w-full">
@@ -54,8 +54,8 @@ const page: FC<Props> = ({ params }) => {
             </div>
             ))}
           </div>
-          <button className="pb-[500px]">BOOK ONLINE</button>
         </div>
+          <div className="w-full flex justify-center pb-16"><button className="m-auto text-center bg-link rounded-xl p-[9px] text-text-light">BOOK ONLINE</button></div>
       </div>
     </div>
   );

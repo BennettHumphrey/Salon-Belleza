@@ -4,87 +4,87 @@ export const pricingData = {
   sections: {
     women: {
       header: "Women's Hair Services",
-      headerDescription: "Header description",
+      headerDescription: "Complete hair styling and treatment for women.",
       prices: [
         {
-          title: "Service 111111",
-          description: "Service description",
-          price: 10,
+          title: "Women's Haircut & Style",
+          description: "A full haircut with styling.",
+          price: 45
         },
         {
-          title: "Service 2",
-          description: "Service description",
-          price: 20,
+          title: "Balayage & Highlights",
+          description: "Modern coloring technique for a natural look.",
+          price: 120
         },
         {
-          title: "Ser",
-          description: "Service description",
-          price: 30,
-        },
-      ],
+          title: "Keratin Treatment",
+          description: "Smooth and strengthen your hair with keratin.",
+          price: 80
+        }
+      ]
     },
     gentlemen: {
-      header: "Gentlemens Approach",
-      headerDescription: "Header description",
+      header: "Gentlemen's Grooming",
+      headerDescription: "Premium grooming services for gentlemen.",
       prices: [
         {
-          title: "Service 1",
-          description: "Service description",
-          price: 10,
+          title: "Classic Haircut",
+          description: "Precision cut tailored to your style.",
+          price: 35
         },
         {
-          title: "Service 2",
-          description: "Service description",
-          price: 20,
+          title: "Beard Trim & Shape",
+          description: "Neat and style your beard to perfection.",
+          price: 20
         },
         {
-          title: "Service 3",
-          description: "Service description",
-          price: 30,
-        },
-      ],
+          title: "Hot Towel Shave",
+          description: "Luxury straight-razor shave with hot towel treatment.",
+          price: 25
+        }
+      ]
     },
     men: {
       header: "Men's Haircuts",
-      headerDescription: "Header description",
+      headerDescription: "Quick and stylish cuts for men.",
       prices: [
         {
-          title: "Service 1",
-          description: "Service description",
-          price: 10,
+          title: "Buzz Cut",
+          description: "Simple clipper cut for a clean, low-maintenance look.",
+          price: 15
         },
         {
-          title: "Service 2",
-          description: "Service description",
-          price: 20,
+          title: "Fade Haircut",
+          description: "Tapered fade for a modern, sharp look.",
+          price: 25
         },
         {
-          title: "Service 3",
-          description: "Service description",
-          price: 30,
-        },
-      ],
+          title: "Men's Haircut & Wash",
+          description: "Includes wash, cut, and quick style.",
+          price: 30
+        }
+      ]
     },
     kids: {
-      header: "Kid's Haircuts",
-      headerDescription: "Header description",
+      header: "Kids' Haircuts",
+      headerDescription: "Fun and friendly haircuts for children.",
       prices: [
         {
-          title: "Service 1",
-          description: "Service description",
-          price: 10,
+          title: "Children's Haircut",
+          description: "Basic haircut for kids under 12.",
+          price: 12
         },
         {
-          title: "Service 2",
-          description: "Service description",
-          price: 20,
+          title: "Kids' Styling",
+          description: "A special style for a special day.",
+          price: 20
         },
         {
-          title: "Service 3",
-          description: "Service description",
-          price: 30,
-        },
-      ],
-    },
-  },
+          title: "Toddler Trim",
+          description: "Quick trim for toddlers.",
+          price: 10
+        }
+      ]
+    }
+  }
 };

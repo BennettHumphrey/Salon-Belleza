@@ -28,7 +28,7 @@ const OurStory = () => {
         src={ourStoryData.bg}
         alt="Background"
       />
-      <div className="bg-[#0006] absolute h-[150vh] overflow-hidden w-screen md:-top-[35vh] inset-0 z-[-5]" />
+      <div className="bg-[#0008] absolute h-[150vh] overflow-hidden w-screen md:-top-[35vh] inset-0 z-[-5]" />
       <div className="z-10 text-center flex flex-col px-8 md:basis-1/2">
         <p className="pt-12">{ourStoryData.title}</p>
         <h2 className="font-semibold text-3xl py-6 tracking-widest">
@@ -44,12 +44,12 @@ const OurStory = () => {
       </div>
       <div className="relative w-4/5 h-[45vw] md:basis-1/2 md:h-[35vw]">
         <img
-          className="absolute top-0 left-0 w-[70%] h-4/5"
+          className="absolute top-0 left-0 w-[70%] h-4/5 rounded-3xl"
           src={ourStoryData.imgs[0].src}
           alt="Image 1"
         />
         <img
-          className="absolute bottom-0 right-0 w-[70%] h-4/5"
+          className="absolute bottom-0 right-0 w-[70%] h-4/5 rounded-3xl"
           src={ourStoryData.imgs[1].src}
           alt="Image 2"
         />

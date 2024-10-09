@@ -14,7 +14,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="overflow-x-hidden">
+      <body className="overflow-x-hidden scroll-smooth">
         <Nav />
         <Providers>
           <div className="relative top-20">{children}</div>
