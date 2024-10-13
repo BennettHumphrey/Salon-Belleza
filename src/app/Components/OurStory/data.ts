@@ -8,7 +8,7 @@ export const ourStoryData = {
     body: "It is our goal that every client feels included and valued while in\
             our care and fabulous about themselves when they leave. We seek to\
             provide an experience.",
-    href: "/",
+    href: "/about",
     linkText: "READ MORE",
     imgs: [
         {

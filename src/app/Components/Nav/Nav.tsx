@@ -21,7 +21,7 @@ const Nav = () => {
 
   return (
     <div className="bg-nav h-20 z-50 w-full border-b border-b-gray-300 fixed">
-      {windowWidth < 976 ? (
+      {windowWidth < 768 ? (
         <MobileNav setMenuOpen={setMenuOpen} />
       ) : (
         <DesktopNav />
