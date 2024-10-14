@@ -15,9 +15,9 @@ const Footer = () => {
             {footerData.header}
           </h3>
           {footerData.contactInfo.map((footerSection, index) => (
-            <div className="flex justify-start items-center" key={index}>
-              <div className="pr-4">{footerSection.icon}</div>
-              <p>{footerSection.text}</p>
+            <div className="flex justify-start items-center group duration-500 hover:cursor-pointer" key={index}>
+              <div className="pr-4 fill-text-light group-hover:fill-link duration-500 group-hover:scale-150">{footerSection.icon}</div>
+              <p className="group-hover:text-link duration-500">{footerSection.text}</p>
             </div>
           ))}
         </div>

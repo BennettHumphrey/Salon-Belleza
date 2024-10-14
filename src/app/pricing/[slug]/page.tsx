@@ -26,7 +26,7 @@ const page: FC<Props> = ({ params }) => {
       setIsExiting(true);
       setTimeout(() => {
         router.push(path, { scroll: false });
-      }, 350); 
+      }, 350);
     }
   };
 
@@ -60,7 +60,13 @@ const page: FC<Props> = ({ params }) => {
               className="basis-[40%] md:basis-[20%] flex justify-center items-center cursor-pointer"
               onClick={() => navigateWithDelay(path)}
             >
-              <div className="w-[120px] text-center bg-nav-line p-3 text-text-light text-sm rounded-lg">
+              <div
+                className="w-[120px] text-center  p-3 text-text-light text-sm rounded-lg"
+                style={{
+                  backgroundColor:
+                    `/pricing/${path}` === currentPath ? "#597733" : "#4e5e41",
+                }}
+              >
                 {path.toUpperCase()}
               </div>
             </div>
