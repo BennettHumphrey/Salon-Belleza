@@ -8,7 +8,7 @@ const Be = () => {
       {beData.beSections.map((section, index) => (
         <Link
           key={index}
-          className={`odd:bg-bg-light odd:text-text-dark even:text-text-light even:bg-bg-dark py-20 px-10 text-center flex flex-col gap-2 md:basis-1/2 ${
+          className={`odd:bg-bg-light group odd:text-text-dark even:text-text-light even:bg-bg-dark py-20 px-10 text-center flex flex-col gap-2 md:basis-1/2 ${
             index === 2 && "md:order-4"
           } ${index === 3 && "md:order-3"}`}
           href={section.href}
@@ -20,7 +20,7 @@ const Be = () => {
             {section.who}
           </h3>
           <p className="tracking-widest">{section.what}</p>
-          <p className="underline underline-offset-2 font-semibold font-sans text-link pt-8">
+          <p className="underline underline-offset-2 w-3/5 m-auto font-semibold font-sans text-link pt-8 group-hover:scale-150 duration-500">
             {section.linkText}
           </p>
         </Link>

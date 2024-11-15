@@ -14,5 +14,6 @@ export const instagramData = {
       src: "/imgs/hair-4.jpg",
     },
   ],
-  button: "FOLLOW US ON INSTAGRAM"
+  button: "FOLLOW US ON INSTAGRAM",
+  link: "https://www.instagram.com/bennett.humphrey/"
 };

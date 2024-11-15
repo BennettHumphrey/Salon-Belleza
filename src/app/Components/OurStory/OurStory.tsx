@@ -18,7 +18,7 @@ const OurStory = () => {
 
   return (
     <div
-      className={`relative -top-px flex flex-col items-center py-10 md:py-20 px-10 md:flex-row md:justify-center ${
+      className={`relative -top-px flex text-text-light flex-col items-center py-10 md:py-20 px-10 md:flex-row md:justify-center ${
         forceUpdate ? "update" : ""
       }`}
     >
@@ -28,15 +28,15 @@ const OurStory = () => {
         src={ourStoryData.bg}
         alt="Background"
       />
-      <div className="bg-[#0008] absolute h-[150vh] overflow-hidden w-screen md:-top-[35vh] inset-0 z-[-5]" />
+      <div className="bg-[#0008] absolute h-[150vh] h-min:top-[0] h-min:h-[200vh] overflow-hidden w-screen md:-top-[35vh] inset-0 z-[-5]" />
       <div className="z-10 text-center flex flex-col px-8 md:basis-1/2">
         <p className="pt-12">{ourStoryData.title}</p>
-        <h2 className="font-semibold text-3xl py-6 tracking-widest">
+        <h2 className="font-semibold text-3xl py-6 tracking-widest h-min:">
           {ourStoryData.header}
         </h2>
         <p className="leading-loose tracking-wide">{ourStoryData.body}</p>
         <Link
-          className="mt-10 mb-12 text-link underline underline-offset-2 tracking-wider"
+          className="mt-10 mb-12 text-link underline underline-offset-2 tracking-wider hover:text-white hover:scale-110 duration-500"
           href={ourStoryData.href}
         >
           {ourStoryData.linkText}

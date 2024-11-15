@@ -6,6 +6,7 @@ import { pricingData } from "../data";
 import SubPageHeader from "@/app/Components/SubPageHeader";
 import Footer from "@/app/Components/Footer/Footer";
 import { AnimatePresence, motion } from "framer-motion";
+import Link from "next/link";
 
 type PricingSlug = keyof typeof pricingData.sections;
 
@@ -57,11 +58,11 @@ const page: FC<Props> = ({ params }) => {
           {paths.map((path, index) => (
             <div
               key={index}
-              className="basis-[40%] md:basis-[20%] flex justify-center items-center cursor-pointer"
+              className="basis-[40%] md:basis-[20%] flex justify-center items-center cursor-pointer group"
               onClick={() => navigateWithDelay(path)}
             >
               <div
-                className="w-[120px] text-center  p-3 text-text-light text-sm rounded-lg"
+                className="w-[120px] text-center  p-3 text-text-light duration-500 text-sm rounded-lg group-hover:!bg-[#597733]"
                 style={{
                   backgroundColor:
                     `/pricing/${path}` === currentPath ? "#597733" : "#4e5e41",
@@ -122,9 +123,9 @@ const page: FC<Props> = ({ params }) => {
           </AnimatePresence>
         </div>
         <div className="w-full flex justify-center pb-16">
-          <button className="m-auto text-center bg-link rounded-xl p-[9px] text-text-light">
+          <Link href='/contact' className="m-auto text-center bg-link hover:bg-white hover:text-text-dark hover:scale-125 duration-500 rounded-xl p-[9px] text-text-light">
             BOOK ONLINE
-          </button>
+          </Link>
         </div>
       </div>
       <Footer />

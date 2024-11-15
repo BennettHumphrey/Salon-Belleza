@@ -32,12 +32,12 @@ const Instagram = () => {
           />
         ))}
       </div>
-      <button className="bg-nav-line h-24 w-64 text-text-light tracking-widest font-semibold p-6 pl-8 rounded-md m-auto mt-10">
-        <div className="absolute">
+      <a  href={instagramData.link} className="bg-nav-line group flex gap-5 h-24 w-64 text-text-light tracking-widest font-semibold p-6 pl-8 rounded-md m-auto mt-10 hover:bg-link duration-500 hover:scale-125 hover:rounded-3xl">
+        <div className="relative group-hover:scale-150 duration-500 group-hover:translate-y-2">
           <InstagramLogo />
         </div>
         {instagramData.button}
-      </button>
+      </a>
     </div>
   );
 };

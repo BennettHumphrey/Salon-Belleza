@@ -4,7 +4,7 @@ import { footerData } from "./data";
 const Footer = () => {
   return (
     <div>
-      <div className="bg-bg-dark pt-20 px-8 flex flex-col md:flex-row md:gap-[5vw] items-center">
+      <div className="bg-bg-dark text-text-light pt-20 px-8 flex flex-col md:flex-row md:gap-[5vw] items-center">
         <div>
           <h2 className="text-6xl font-bold">LOGO</h2>
           <h2 className="text-3xl font-semibold">Salon Belleza</h2>
@@ -22,7 +22,7 @@ const Footer = () => {
           ))}
         </div>
         </div>
-          <div className="h-full w-screen bg-bg-dark flex justify-center pt-5 pb-2">
+          <div className="h-full w-screen bg-bg-dark flex justify-center pt-20 pb-10">
             <a
               target="_blank"
               href="https://bennetthumphrey.com"

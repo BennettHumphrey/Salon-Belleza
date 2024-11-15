@@ -1,8 +1,12 @@
 import React from "react";
 import { heroData } from "./data";
 import { motion } from "framer-motion";
+import { useRouter } from "next/navigation";
 
 const Hero = () => {
+
+  const nav = useRouter()
+
   return (
     <div className="bg-bg-dark pb-12 flex flex-col md:flex-row-reverse md:justify-around md:px-[10%] md:pt-16">
       <div className="p-10 ">
@@ -22,7 +26,8 @@ const Hero = () => {
           initial={{ scale: 1 }}
           animate={{ scale: 1.05 }}
           transition={{ repeat: Infinity, repeatType: "reverse", duration: 1 }}
-          className="p-6 bg-bg-light border-2 border-orange-100 rounded-lg text-text-dark text-xl mt-6 md:w-[250px] m-auto"
+          onClick={() => nav.push('/contact')}
+          className="p-6 bg-bg-light border-2 border-orange-100 rounded-lg text-text-dark text-xl mt-6 md:w-[250px] m-auto duration-500 hover:bg-link hover:text-text-light"
         >
           {heroData.button}
         </motion.button>

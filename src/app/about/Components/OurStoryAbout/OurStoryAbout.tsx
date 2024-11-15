@@ -15,7 +15,7 @@ const OurStoryAbout = () => {
   return (
     <div className="relative text-text-dark bg-bg-light pt-16 px-[12%] pb-14 overflow-x-hidden">
       <div className="top-20 w-[140%] absolute overflow-hidden">
-        <h2 className="text-text-light text-5xl font-bold font-serif md:text-[14.3vw] opacity-40 relative z-20">
+        <h2 className="text-text-light text-5xl font-bold font-serif md:text-[14.3vw] opacity-[0.65] relative z-20">
           OUR STORY
         </h2>
       </div>
