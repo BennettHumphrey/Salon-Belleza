@@ -14,7 +14,7 @@ type Props = {
   params: { slug: PricingSlug };
 };
 
-const page: FC<Props> = ({ params }) => {
+const Page: FC<Props> = ({ params }) => {
   const data = pricingData.sections[params.slug];
   const paths = Object.keys(pricingData.sections);
   const router = useRouter();
@@ -133,4 +133,4 @@ const page: FC<Props> = ({ params }) => {
   );
 };
 
-export default page;
+export default Page;

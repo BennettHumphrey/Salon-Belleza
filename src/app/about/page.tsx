@@ -7,7 +7,7 @@ import OurStoryAbout from "./Components/OurStoryAbout/OurStoryAbout";
 const About = () => {
   return (
     <div className="relative">
-      <SubPageHeader src="/imgs/haircut-1.jpg" header="ABOUT US" />
+      <SubPageHeader src="/imgs/haircut-1.webp" header="ABOUT US" />
       <OurTeam />
       <OurStoryAbout />
       <Footer  />

@@ -38,6 +38,7 @@ const OurStory = () => {
         <Link
           className="mt-10 mb-12 text-link underline underline-offset-2 tracking-wider hover:text-white hover:scale-110 duration-500"
           href={ourStoryData.href}
+          aria-label={ourStoryData.alt}
         >
           {ourStoryData.linkText}
         </Link>

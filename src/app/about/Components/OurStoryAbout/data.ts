@@ -1,6 +1,6 @@
 export const ourStoryAboutData = {
   header: "ABOUT US",
-  img: "/imgs/salon-1.jpg",
+  img: "/imgs/salon-1.webp",
   summary:
     "Salon Belleza is a business rooted in connection, embracing family values and a sense of community.",
   body: "At Salon Belleza, our experienced and passionate team nurtures every client relationship with honesty and compassion. Our goal is for every guest to feel included, valued, and leave our salon feeling fabulous. We strive to provide not just a service, but a memorable experience.\n\n\

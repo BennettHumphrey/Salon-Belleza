@@ -30,7 +30,7 @@ const OurTeam = () => {
               }}
               className="flex flex-col w-[80%] md:basis-1/3 lg:basis-[20%]"
             >
-              <img src={member.img} className="shadow-lg rounded-md" />
+              <img src={member.img} alt={`Photo of ${member.name}`} className="shadow-lg rounded-md" />
               <h3 className="text-3xl font-bold pt-6 pb-4">{member.name}</h3>
               <h4 className="text-3xl underline pb-3">{member.role}</h4>
               <p className="">{member.description}</p>

@@ -24,7 +24,9 @@ const OurStoryAbout = () => {
           <h3 className="text-4xl font-bold">{ourStoryAboutData.header}</h3>
           {windowWidth > 1100 && (
             <div className="w-full pt-[10%]">
-              <img className="w-4/5 h-full rounded-3xl" src={ourStoryAboutData.img} />
+              <img 
+              alt=""
+              className="w-4/5 h-full rounded-3xl" src={ourStoryAboutData.img} />
             </div>
           )}
         </div>

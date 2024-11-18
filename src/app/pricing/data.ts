@@ -1,6 +1,6 @@
 export const pricingData = {
   generalHeaderText: "OUR HAIR SERVICES",
-  headerImg: "/imgs/haircut-2.jpg",
+  headerImg: "/imgs/haircut-2.webp",
   sections: {
     women: {
       header: "Women's Hair Services",

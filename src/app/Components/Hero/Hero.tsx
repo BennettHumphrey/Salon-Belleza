@@ -12,6 +12,9 @@ const Hero = () => {
       <div className="p-10 ">
         <img
           className="overflow-hidden rounded-t-full border-2 border-text-accent"
+          alt="Hair"
+          width={427}
+          height={640}
           src={heroData.img.src}
         />
       </div>

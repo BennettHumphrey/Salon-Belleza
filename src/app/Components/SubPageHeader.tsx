@@ -29,6 +29,7 @@ const SubPageHeader:FC<Props> = ({
     <div>
         <div className="w-full h-[25vh] md:h-[25vw] flex items-center justify-center relative">
         <img
+          alt=''
           ref={parallaxRef.ref as React.RefObject<HTMLImageElement>}
           src={src}
           className={`h-[180%] ${parallax ? "-top-[150%] lg:-top-[100%]" : "top-0"} w-full absolute -z-20`}

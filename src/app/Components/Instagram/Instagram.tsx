@@ -26,6 +26,7 @@ const Instagram = () => {
       <div className="flex flex-row flex-wrap m-auto max-w-[1200px]">
         {instagramData.imgs.map((image, index) => (
           <img
+            alt={`Instagram photo ${index}`}
             key={index}
             className="basis-1/2 md:basis-1/4 overflow-hidden border border-bg-light"
             src={image.src}
