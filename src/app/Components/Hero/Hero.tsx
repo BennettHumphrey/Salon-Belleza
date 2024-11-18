@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { heroData } from "./data";
 import { motion } from "framer-motion";
 import { useRouter } from "next/navigation";
@@ -7,28 +7,37 @@ const Hero = () => {
   const nav = useRouter();
   const [isLoaded, setIsLoaded] = useState(false);
 
+  useEffect(() => {
+    console.log('IsLoaded: ', isLoaded)
+  }, [isLoaded])
+
+  
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsLoaded(true);
+    }, 200);
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <div className="bg-bg-dark pb-12 flex flex-col md:flex-row-reverse md:justify-around md:px-[10%] md:pt-16">
       <div className="p-10">
         <div className="relative w-[427px] h-[640px] overflow-hidden rounded-t-full border-2 border-text-accent">
           
           <img
-            className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-300 ${
-              isLoaded ? "opacity-0" : "opacity-100"
-            }`}
+            className="absolute inset-0 w-full h-full object-cover transition-opacity duration-700"
+            style={{opacity: isLoaded ? 0 : 100}}
             alt="Placeholder"
             src={heroData.img.placeholder}
           />
 
           <img
-            className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-300 ${
-              isLoaded ? "opacity-100" : "opacity-0"
-            }`}
+            className="absolute inset-0 w-full h-full object-cover transition-opacity duration-300"
+            style={{opacity: isLoaded ? 100 : 0}}
             alt="Hair"
             width={427}
             height={640}
             src={heroData.img.src}
-            onLoad={() => setIsLoaded(true)}
           />
         </div>
       </div>
