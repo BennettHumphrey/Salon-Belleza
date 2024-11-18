@@ -6,7 +6,7 @@ import { Providers } from "./Providers";
 
 export const metadata: Metadata = {
   title: "Salon Belleza",
-  description: "Salon Belleza fictional salon",
+  description: "Discover the finest hair and beauty services at Salon Belleza...",
 };
 
 export default function RootLayout({

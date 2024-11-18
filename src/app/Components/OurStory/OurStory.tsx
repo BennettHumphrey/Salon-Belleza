@@ -41,6 +41,7 @@ const OurStory = () => {
           aria-label={ourStoryData.alt}
         >
           {ourStoryData.linkText}
+          <span className="sr-only"> about our story</span>
         </Link>
       </div>
       <div className="relative w-4/5 h-[45vw] md:basis-1/2 md:h-[35vw]">

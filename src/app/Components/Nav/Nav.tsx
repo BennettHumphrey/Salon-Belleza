@@ -36,7 +36,7 @@ const Nav = () => {
             className="bg-nav-open overflow-x-hidden relative flex flex-col items-center justify-between items-between border-b border-b-gray-300"
           >
             {navOptions.map((menuOption, index) => (
-              <Link href={menuOption.path} onClick={() => setMenuOpen(false)} className="px-6 h-12 w-full flex items-center" key={index}>
+              <Link href={menuOption.path} aria-label={menuOption.description} onClick={() => setMenuOpen(false)} className="px-6 h-12 w-full flex items-center" key={index}>
                 <p className="tracking-[3px] w-[90%] m-auto font-sans font-semibold border-b border-b-nav-line">
                   {menuOption.title}
                 </p>
