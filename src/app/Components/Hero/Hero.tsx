@@ -21,13 +21,15 @@ const Hero = () => {
 
   return (
     <div className="bg-bg-dark pb-12 flex flex-col md:flex-row-reverse md:justify-around md:px-[10%] md:pt-16">
-      <div className="p-10">
-        <div className="relative w-[427px] h-[640px] overflow-hidden rounded-t-full border-2 border-text-accent">
+      <div className="pt-10">
+        <div className="relative w-[56vw] h-[83vw] max-w-[52.8vh] max-h-[80vh] m-auto overflow-hidden rounded-t-full border-2 border-text-accent">
           
           <img
             className="absolute inset-0 w-full h-full object-cover transition-opacity duration-700"
             style={{opacity: isLoaded ? 0 : 100}}
             alt="Placeholder"
+            width={427}
+            height={640}
             src={heroData.img.placeholder}
           />
 
