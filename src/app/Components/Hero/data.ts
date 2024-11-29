@@ -4,7 +4,7 @@ export const heroData = {
     placeholder: "/imgs/header-hair-blur.webp",
   },
 
-  header: "WE SEEK TO PROVIDE AN EXPERIENCE",
-  body: "THE HAIR SALON AT THE GATEWAY TO WELLINGTON",
+  header: "UNVEILING CONFIDENCE THROUGH STYLE",
+  body: "THE HAIR SALON in THE HEART OF VICTORIA",
   button: "BOOK ONLINE",
 };

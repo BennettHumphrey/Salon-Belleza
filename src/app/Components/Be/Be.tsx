@@ -8,7 +8,7 @@ const Be = () => {
       {beData.beSections.map((section, index) => (
         <Link
           key={index}
-          className={`odd:bg-bg-light group odd:text-text-dark even:text-text-light even:bg-bg-dark py-20 px-10 text-center flex flex-col gap-2 md:basis-1/2 ${
+          className={`odd:bg-bg-light group odd:text-text-dark border-4 border-bg-dark even:text-text-light even:bg-bg-dark py-20 px-10 text-center flex flex-col gap-2 md:basis-1/2 ${
             index === 2 && "md:order-4"
           } ${index === 3 && "md:order-3"}`}
           href={section.href}
