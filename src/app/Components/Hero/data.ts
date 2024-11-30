@@ -5,6 +5,6 @@ export const heroData = {
   },
 
   header: "UNVEILING CONFIDENCE THROUGH STYLE",
-  body: "THE HAIR SALON in THE HEART OF VICTORIA",
+  body: "THE HAIR SALON IN THE HEART OF VICTORIA",
   button: "BOOK ONLINE",
 };
